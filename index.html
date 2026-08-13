@@ -188,7 +188,7 @@
       border: 1px solid rgba(255,255,255,0.3);
     }
 
-    /* ===== BOOKING SECTION (NOW AT TOP) ===== */
+    /* ===== BOOKING SECTION ===== */
     .booking-section {
       background: rgba(255, 255, 255, 0.85);
       backdrop-filter: blur(8px);
@@ -399,7 +399,7 @@
       margin-right: 4px;
     }
 
-    /* ===== FOOTER / DETAILS ===== */
+    /* ===== FOOTER / DETAILS (with clickable links) ===== */
     .footer-details {
       background: #0b1d31;
       color: #d6e3f5;
@@ -442,6 +442,13 @@
       width: 22px;
       color: #5b8eda;
       font-size: 1.2rem;
+    }
+    /* Special style for clickable links */
+    .footer-col a[href] {
+      cursor: pointer;
+    }
+    .footer-col a[href]:hover i {
+      color: #a885d8;
     }
     .footer-copy {
       margin-top: 30px;
@@ -495,7 +502,7 @@
     </p>
   </div>
 
-  <!-- ===== BOOKING SECTION (NOW AT TOP) ===== -->
+  <!-- ===== BOOKING SECTION ===== -->
   <div class="booking-section" id="booking">
     <h2><i class="fab fa-whatsapp"></i> book now · whatsapp</h2>
     <p style="color: #2a4b6e; margin-bottom: 12px;">Fill details & we'll connect on WhatsApp instantly</p>
@@ -592,29 +599,50 @@
     </div>
   </div>
 
-  <!-- FOOTER / BOTTOM DETAILS -->
+  <!-- ===== FOOTER / BOTTOM DETAILS (with clickable links) ===== -->
   <div class="footer-details">
     <div class="footer-inner">
+      <!-- Contact Column -->
       <div class="footer-col">
         <h4><i class="fas fa-address-card"></i> contact</h4>
-        <p><i class="fas fa-envelope"></i> care@cleanx.in</p>
-        <p><i class="fas fa-phone-alt"></i> +91 89822 28922</p>
-        <p><i class="fab fa-whatsapp"></i> +91 89822 28922</p>
+        <a href="mailto:care@cleanx.in" target="_blank">
+          <i class="fas fa-envelope"></i> care@cleanx.in
+        </a>
+        <a href="tel:+918982228922">
+          <i class="fas fa-phone-alt"></i> +91 89822 28922
+        </a>
+        <a href="https://wa.me/918982228922" target="_blank">
+          <i class="fab fa-whatsapp"></i> +91 89822 28922
+        </a>
       </div>
+
+      <!-- Social Column -->
       <div class="footer-col">
         <h4><i class="fas fa-share-alt"></i> social</h4>
-        <a href="#"><i class="fab fa-instagram"></i> @cleanx.inofficial</a>
+        <a href="https://www.instagram.com/cleanx.inofficial" target="_blank">
+          <i class="fab fa-instagram"></i> @cleanx.inofficial
+        </a>
+        <a href="https://www.facebook.com/cleanx.in" target="_blank">
+          <i class="fab fa-facebook"></i> /cleanx.in
+        </a>
+        <a href="https://www.youtube.com/@cleanxwash" target="_blank">
+          <i class="fab fa-youtube"></i> cleanx wash
+        </a>
       </div>
+
+      <!-- Hours Column -->
       <div class="footer-col">
         <h4><i class="fas fa-clock"></i> hours</h4>
         <p><i class="fas fa-sun"></i> 7:00 – 6:00</p>
         <p><i class="fas fa-calendar-alt"></i> Mon–Sun</p>
         <p><i class="fas fa-home"></i> doorstep service</p>
       </div>
+
+      <!-- Location Column -->
       <div class="footer-col">
         <h4><i class="fas fa-map-marked-alt"></i> location</h4>
         <p><i class="fas fa-city"></i> Sarangarh (C.G.)</p>
-        <p><i class="fas fa-map-pin"></i>service provide under 30KM on sarangarh</p>
+        <p><i class="fas fa-map-pin"></i> service provide under 30KM on sarangarh</p>
       </div>
     </div>
     <div class="footer-copy">
